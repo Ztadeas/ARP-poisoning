@@ -6,7 +6,7 @@ import time
 
 gateway  = "10.0.0.138"
 ip = "10.0.0.149"
-count = int(input("Enter how many packets you want to sniff"))
+count = int(input("Enter how many packets you want to sniff: "))
 
 
 def get_mac(ipaddr):
