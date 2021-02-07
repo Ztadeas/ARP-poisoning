@@ -53,11 +53,13 @@ def sniff():
 
 t1 = threading.Thread(target=poison, args= (gateway, gate_mac, gate_ip, ip))
 
-time.sleep(1)
 
 t2 = threading.Thread(target=sniff, args= (gateway, gate_mac, gate_ip, ip))
 
 t1.start()
+
+time.sleep(1)
+
 t2.start()
 
 
